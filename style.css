@@ -1,0 +1,96 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.container{
+    background-color: rgb(123, 163, 255);
+    height: 20rem;
+    width: 85%;
+    display: flex;
+    /* display: block; */
+    margin: 80px auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.timebox{
+    display: inline-block;
+    padding: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 7rem;
+    margin: 0px 30px;
+    font-weight: 500;
+}
+
+.colon{
+    font-size: 7rem;
+    font-weight: 900;
+}
+
+body{
+    height: 100vh;
+    width: 100%;
+
+}
+
+button{
+    border: none;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 25px;
+    background-color: rgb(84, 49, 119);
+    padding: 6px 19px;
+    color: white;
+    margin: 5px 10px;
+}
+
+button:hover{
+    background-color: rgb(52, 41, 81);
+    cursor: pointer;
+}
+
+.btn-block{
+    display: flex;
+    justify-content: center;
+}
+
+@media (min-width:544px) and (max-width:786px){
+    .container{
+        width: 95%;
+        height: 16rem;
+    }
+
+    .container .timebox, .colon{
+        font-size: 5.2rem;
+        margin: 0px 14px;
+    }
+}
+
+@media (min-width:330px) and (max-width:544px){
+    .container{
+        width: 96%;
+        height: 13rem;
+    }
+
+    .container .timebox, .colon{
+        font-size: 4rem;
+        margin: 0px ;
+    }
+}
+
+@media (min-width:250px) and (max-width:330px){
+    .container{
+        width: 97%;
+        height: 7rem;
+    }
+
+    .container .timebox, .colon{
+        font-size: 2.6rem;
+        margin: 0px ;
+    }
+
+    button{
+        font-size: 15px;
+        margin: 5px;
+    }
+}
